@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    } 
+    body{
+        background-color: #2121e7;
+        background-image: url('/IMG_20231125_011337_556.jpg');
+        background-position:center center;
+       
+    }
+    .container{
+        background-color:red;
+        border:4px solid black;
+        /* we can set top bootam left right using and same for margin*/
+        padding: 100px;
+        padding-left: 40px;
+        /* margin create gap between border */
+        margin: 50px;
+        padding:60px 50px 90px 80px; /*top right bootom left and same for margin*/
+        padding:60px 50px;/*y(top/bootom)x(right/left)*/
+        border-radius:60px;
+        width: 900px;
+      
+        
+
+        
+
+    }
+
+</style>
+<body>
+    <div class="container">
+    <h3>system3</h3>
+    <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sapiente porro laboriosam in veniam maiores iusto repudiandae nulla, deserunt quam earum at animi quos provident eaque est possimus delectus ipsum!</p>
+    </div>
+    <div class="container">
+        <h3>system2</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sapiente porro laboriosam in veniam maiores iusto repudiandae nulla, deserunt quam earum at animi quos provident eaque est possimus delectus ipsum!</p>
+        </div>
+    <div class="container">
+        <h3>system1</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sapiente porro laboriosam in veniam maiores iusto repudiandae nulla, deserunt quam earum at animi quos provident eaque est possimus delectus ipsum!</p>
+            </div>
+</body>
+</html>
