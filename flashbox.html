@@ -7,19 +7,26 @@
     <style>
         .container{
             height:544px;
-            width: 1000px;
+            width: 1500px;
             border: 4px solid black;
-            display: flex;
+             display: flex;/*intialize first for flexbox */
             /* flex properties for flex container */
-            flex-direction: column;
-            /* flex-direction: row;(by default) */
-            flex-direction: row-reverse;
-            flex-direction: column-reverse;
-            flex-direction: row;
-            flex: wrap;
-            float: wrap-reverse;
-            flex-flow: column wrap;
-
+            /* flex-direction: column; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex: wrap; */
+            /* float: wrap-reverse; */
+            /* flex-flow: column wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; vertically center kar dega  */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; vertically evenly space create kar dega  */
         }
         .item{
             background-color: tomato;
@@ -27,9 +34,29 @@
             margin: 5px;
             padding: 0px;
             height: 200px;
-            width: 300px;
-            
+            width: 200px;
         }
+        /* flexbox property for items */
+        /* higher the order to sabse end me ayega */
+        #item1{
+            order: 40;
+            /* flex-grow:2 ; */
+        }
+        #item2{
+            order: 30;
+            /* flex-grow: 3;iska size teji se badega */
+            /* flex-shrink: 2;iska size teji se ghatega */
+            flex-basis: 300px;/*(when flex direction are set to in a row then width me change ayega) */
+            /* other wise (when flex direction are set to in a column then height me change ayega) */
+        }
+        #item3{
+            order: 50;
+            /* flex:2 2 300px ; (flex grow,flexshrink,flexbasis) */
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end;
+        }
+        
 
 
     </style>
@@ -40,9 +67,9 @@
     <div class="item" id="item1">FIRST BOX</div>
     <div class="item" id="item2">SECOND BOX</div>
     <div class="item" id="item3">THIRD BOX</div>
-    <div class="item" id="item4">FOURTH BOX</div>
+    <!-- <div class="item" id="item4">FOURTH BOX</div>
     <div class="item" id="item5">FIVTH BOX</div>
-    <div class="item" id="item6">SIXTH BOX</div>
+    <div class="item" id="item6">SIXTH BOX</div> -->
 </div>
 </body>
 </html>
