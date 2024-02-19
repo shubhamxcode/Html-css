@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nthchild and pseduo selector</title>
+    <style>
+        input{
+            display: block;
+        }
+        .container{
+            margin: auto;
+            width: 300px;
+        }
+        input[type='text']{
+            border: 5px solid orangered;
+        }
+        a[target]{
+            background-color: purple;
+        }
+        a[target='_self']{
+            background-color: aqua;
+        }
+        li:nth-child(3){
+            background-color: blueviolet;
+        }
+        /* where n start from 0 to ..... */
+        li:nth-child(2n+0){
+            background-color: aquamarine;
+        }
+        li:nth-child(odd){
+            background-color: red;
+        }
+        li:nth-child(even){
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1><a href="www.google.com" target="_blank">go to google</a></h1>
+        <h2><a href="www.instagram.com" target="_self">go to instagram</a></h2>
+        <form action="" class="formcontrol"></form>
+        <input type="text" placeholder="enter your name ">
+        <input type="password" name="" id="" placeholder="enter your password">
+        <input type="submit" name="" id="" placeholder="submit">
+        <ul>
+            <li class="item1">item1</li>
+            <li class="item2">item2</li>
+            <li class="item3">item3</li>
+            <li class="item4">item4</li>
+            <li class="item5">item5</li>
+            <li class="item6">item6</li>
+            <li class="item7">item7</li>
+            <li class="item8">item8</li>
+            <li class="item9">item9</li>
+            <li class="item10">item10</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
