@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and custom</title>
+    <style>
+        :root{
+            --world-color:red;
+            --mxwh:333px;
+            --ruby-color:green
+        }
+        .shubham{
+            display: flex;
+            /* --world-color:orange; */
+            background-color: var(--world-color);
+            justify-content: center;
+            margin: auto;
+            width: var(--mxwh);
+        }
+        .box{
+            margin: 20px 22px;
+            border: 2px solid black;
+            width: 200px;
+            height: 100px;
+            /* --world-color:red; */
+            background-color: var(--ruby-color);
+            width: var(--mxwh);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="shubham">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+    
+</body>
+</html>

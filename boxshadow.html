@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxshadow and textshadow</title>
+    <style>
+        .shubham{
+            display: flex;
+
+        }
+        .card{
+            margin: 23px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 23px 12px;
+            background-color: black;
+            color: white;
+            /* box-shadow:offset-x,offset-y,color ; */
+            /* box-shadow: 10px 42px black ; */
+            /* box-shadow: -10px -20px red; */
+            /* box-shadow:offset-x,offset-y,blur-radius,color ; */
+            /* box-shadow: 10px 42px 27px black ; */
+            /* box-shadow: -10px -42px 27px black ; */
+            /* box-shadow:offset-x,offset-y,blur-radius, spread radius,color ; */
+            /* box-shadow: 10px 10px 10px 10px red; */
+            box-shadow: 10px 10px 10px 10px rgba(24, 19, 19, 0.7);/*alpha decide darkness*/
+            /* box-shadow:inset 4px 23px blue ;inset means under se shadow */
+            /* box-shadow:22px 23px blue,23px 28px red ;shadow ke under shadow */
+            text-shadow: 1px 1px black;
+            /* text-shadow: -1px -1px black; */
+        }
+
+    </style>
+</head>
+<body>
+<div class="shubham">
+    <div class="card" id="card-1">
+        <h1>card1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores debitis ex unde, numquam ut et reprehenderit repellendus non ullam incidunt quis id, soluta veritatis pariatur nam, ad facere minus!</p>
+    </div>
+    <div class="card" id="card-2">
+        <h1>card2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis! Fuga, quaerat! Consectetur, ad debitis odio repellat quae, aut dicta enim eum amet veniam quo quam ut, architecto odit eveniet!</p>
+    </div>
+    <div class="card" id="card-3">
+        <h1>card3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A velit tempore placeat, corporis in similique repellat dolorum est quo, nemo rem voluptatum odit nam voluptas maiores animi fugit ea autem.</p>
+    </div>
+</div>
+    
+</body>
+</html>

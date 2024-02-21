@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseduo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+           
+            
+
+        }
+        header::before{
+            font-size: 25px;
+            background-image: url('/IMG_20231125_011337_556.jpg');
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0%;
+            left: 0%;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            
+        }
+        li{
+            padding: 30px;
+            
+        }
+        section::after{
+            content: 'shubham bhai';
+        }
+        section::before{
+            content: 'shubham ji bhai';
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="navy">home </li>
+                <li class="navy">about </li>
+                <li class="navy">services</li>
+                <li class="navy">contact us</li>
+            </ul>
+
+        </nav>
+    </header>
+        <section>
+            <h1>welcome to coding world</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis eveniet deserunt exercitationem dolorum. Nostrum laudantium voluptatibus facere eos iste harum mollitia. Consectetur itaque fugiat nesciunt iure atque molestias quae officiis. Dolorum, esse. Consequatur!
+        </section>
+        <hr>
+  
+    
+</body>
+</html>
