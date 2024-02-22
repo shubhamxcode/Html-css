@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation &keyframes</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            background-color: aqua;
+        }
+        .box{
+            height:200px;
+            width: 300px;
+            position: relative;
+            background-color: aliceblue;
+            animation-name: shubham;
+            animation-duration: 1s;/*fast kiitna chalega*/
+            animation-iteration-count: 5;/*kitni bar chalega*/
+            animation-iteration-count: 1;/*kitni bar chalega*/
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+            /* animation-timing-function: ease-in;starting me slow hoga fir fast ho jayega */
+            /* animation-timing-function: ease-out;starting me fast hoga fir slow ho jayega */
+            /* animation-delay: 4s; */
+            /* animation-direction: reverse; */
+            animation-name: shubham-2;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out;
+            /* animation: animation-name animation-duration animation-timing-sunction animation-delay animation-itretion-count animation-fill-mode; */
+
+        }
+        @keyframes shubham {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+        @keyframes shubham-2 {
+            0%{
+                top:0px ;
+                left: 0px;
+            }
+            50%{
+                top: 300px;
+                left: 400px;
+
+            }
+            100%{
+                top: 100px;
+                left: 100px;
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+    
+</body>
+</html>
