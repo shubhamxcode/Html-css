@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        /* position:static(by default),absolute,relative,fixed,sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* relative:relative to its normal position and leave a gap to its normal postion  */
+            position: relative;
+            top: 30px;
+            left: 90px; 
+            /* absolute :relative to the first position of its first parent(container) and  dont leave a gap to its normal postion  */
+            position: absolute;
+            left: 50px; 
+            background-color: aqua;
+            position: fixed;
+            /* chipakjana */
+            position: sticky;
+            bottom: 445px;
+
+
+           
+            
+
+
+
+        }
+        .container{
+            background-color: blue;
+            height: 2000px;
+            
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    
+</body>
+</html>
